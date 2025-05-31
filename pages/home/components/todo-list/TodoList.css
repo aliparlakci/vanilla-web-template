@@ -1,0 +1,25 @@
+.todo-list {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+}
+
+.todo-list__loading,
+.todo-list__empty {
+    text-align: center;
+    color: #666;
+    padding: 2rem;
+}
+
+.todo-list__items {
+    list-style: none;
+}
+
+.todo-list__item {
+    border-bottom: 1px solid #eee;
+}
+
+.todo-list__item:last-child {
+    border-bottom: none;
+}

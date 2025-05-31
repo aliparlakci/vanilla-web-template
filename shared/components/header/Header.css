@@ -1,0 +1,27 @@
+.app-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.app-header__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.app-header__stats {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.app-header__stat {
+    font-size: 0.875rem;
+}
+
+.app-header__stat strong {
+    font-weight: 600;
+}
