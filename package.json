@@ -1,17 +1,20 @@
 {
   "name": "vanilla-js-starter",
   "version": "1.0.0",
+  "type": "module",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
     "start": "http-server . -p 3000",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "http-server": "^14.1.1"
+    "http-server": "^14.1.1",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
   }
 }
