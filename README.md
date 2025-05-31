@@ -8,7 +8,7 @@ This architecture prioritizes ease of development and maintenance over complex a
 ### No Build Process
 - Source code runs directly in browsers using native ES6 modules
 - What you write is what executes - no transpilation, bundling, or compilation
-- Requires serving from a web server (not file://) for absolute imports to work
+- Requires serving from a web server for absolute imports to work
 
 ## Key Design Decisions
 

@@ -1,4 +1,4 @@
-import { TodoApiClient } from '/api/TodoApiClient.js';
+import { TodoApiClient } from '/client/TodoApiClient.js';
 import { TodoEventBus } from '/pubsub/TodoEventBus.js';
 
 // Ensure we're in module mode

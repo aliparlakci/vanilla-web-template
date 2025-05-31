@@ -1,6 +1,6 @@
 import { AddTodoContainer } from '/components/add-todo/AddTodo.container.js';
 import { TodoListContainer } from '/components/todo-list/TodoList.container.js';
-import { TodoApiClient } from '/api/TodoApiClient.js';
+import { TodoApiClient } from '/client/TodoApiClient.js';
 import { TodoEventBus } from '/pubsub/TodoEventBus.js';
 
 // Ensure we're in module mode
