@@ -89,10 +89,57 @@ This architecture prioritizes ease of development and maintenance over complex a
 - Never reach across component boundaries directly
 
 ### Testing Approach
-- Dependency injection enables easy testing
-- Containers testable with mock dependencies  
-- Views testable with mock callbacks
-- No mocking libraries needed - just objects
+
+#### Unit Testing Philosophy
+- **Isolation**: Test components in isolation from their dependencies
+- **Dependency Injection**: Constructor-based DI enables easy mocking
+- **Simplicity**: Use simple object mocks rather than complex mocking libraries
+- **Focus on Behavior**: Test what components do, not how they're implemented
+- **Separation of Concerns**: Container and view tests have different focuses
+
+#### Unit Testing Components
+- **Container Tests**:
+  - Mock API clients, event buses, and other dependencies
+  - Verify state transitions and management
+  - Test error handling and edge cases
+  - Ensure proper event publishing
+  - Focus on business logic correctness
+
+- **View Tests**:
+  - Verify correct DOM structure and rendering
+  - Test event handlers and callback invocations
+  - Ensure UI updates correctly based on state changes
+  - Mock parent callbacks
+  - Focus on presentation correctness
+
+- **Service Tests**:
+  - Test API clients for correct data handling
+  - Test event buses for proper pub/sub functionality
+  - Verify utility functions work as expected
+  - Mock external dependencies (e.g., localStorage)
+
+#### Unit Testing Best Practices
+- Create clean test environments with `beforeEach`
+- Tests should be independent and not affect each other
+- Use descriptive test names that explain the expected behavior
+- Follow the AAA pattern: Arrange, Act, Assert
+- Test both happy paths and error cases
+- Keep tests focused and small
+- Avoid testing implementation details
+
+#### Integration Testing Philosophy
+- **Black Box Approach**: Test components as they would be used in production, without knowledge of internal implementation
+- **Real Component Interaction**: Test how multiple components work together in realistic scenarios
+- **End-to-End Workflows**: Focus on complete user workflows rather than isolated functionality
+- **Minimal Mocking**: Only mock external dependencies but use real internal dependencies
+- **DOM Verification**: Verify the actual DOM reflects expected application state
+
+#### Integration Testing Strategies
+- **Component Integration**: Test how containers communicate via the event bus
+- **Workflow Testing**: Simulate user actions (clicks, form submissions) and verify correct behavior
+- **Persistence Testing**: Verify data is correctly saved and retrieved
+- **Error Handling**: Test how errors propagate through the system
+- **State Synchronization**: Verify all components reflect the same application state
 
 ## What This Architecture Is NOT
 
