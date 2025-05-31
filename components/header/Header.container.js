@@ -1,5 +1,5 @@
 import { Header } from './Header.js';
-import { TODO_EVENTS } from '../../../lib/pubsub/TodoEventBus.js';
+import { TODO_EVENTS } from '/pubsub/TodoEventBus.js';
 
 export class HeaderContainer {
     constructor(eventBus) {

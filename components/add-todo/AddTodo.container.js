@@ -1,5 +1,5 @@
 import { AddTodo } from './AddTodo.js';
-import { TODO_EVENTS } from '../../../../lib/pubsub/TodoEventBus.js';
+import { TODO_EVENTS } from '/pubsub/TodoEventBus.js';
 
 export class AddTodoContainer {
     constructor(apiClient, eventBus) {

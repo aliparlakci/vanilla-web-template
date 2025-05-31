@@ -1,6 +1,6 @@
 import { TodoList } from './TodoList.js';
 import { TodoItemContainer } from './components/todo-item/TodoItem.container.js';
-import { TODO_EVENTS } from '../../../../lib/pubsub/TodoEventBus.js';
+import { TODO_EVENTS } from '/pubsub/TodoEventBus.js';
 
 export class TodoListContainer {
     constructor(apiClient, eventBus) {

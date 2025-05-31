@@ -1,8 +1,8 @@
-import { HeaderContainer } from '../../shared/components/header/Header.container.js';
-import { AddTodoContainer } from './components/add-todo/AddTodo.container.js';
-import { TodoListContainer } from './components/todo-list/TodoList.container.js';
-import { TodoApiClient } from '../../api-clients/TodoApiClient.js';
-import { TodoEventBus } from '../../lib/pubsub/TodoEventBus.js';
+import { HeaderContainer } from '/components/header/Header.container.js';
+import { AddTodoContainer } from '/components/add-todo/AddTodo.container.js';
+import { TodoListContainer } from '/components/todo-list/TodoList.container.js';
+import { TodoApiClient } from '/api/TodoApiClient.js';
+import { TodoEventBus } from '/pubsub/TodoEventBus.js';
 
 // Initialize shared dependencies
 const apiClient = new TodoApiClient();

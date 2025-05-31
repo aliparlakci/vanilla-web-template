@@ -57,6 +57,6 @@ export class TodoApiClient {
     }
 
     _delay(ms) {
-        return new Promise(resolve => setTimeout(resolve, 0));
+        return new Promise(resolve => setTimeout(resolve, ms));
     }
 }

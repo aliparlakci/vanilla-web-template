@@ -1,4 +1,4 @@
-import { formatDate } from '../../../../../../../../shared/utils/dateFormatter.js';
+import { formatDate } from '/utils/dateFormatter.js';
 
 export class TodoItem {
     constructor(parentElement, callbacks) {
